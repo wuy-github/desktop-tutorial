@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Chào mừng bạn đến với Smartphone – Điểm đến uy tín cho những ai đam mê công nghệ!
+                </p>
+                <br />
+                <p>
+                    Tại Smartphone, chúng tôi chuyên cung cấp các dòng điện thoại di động mới nhất từ những thương hiệu
+                    hàng đầu như Apple, Samsung, Xiaomi, và nhiều hãng khác. <br><br>Với sự đa dạng về sản phẩm, từ các
+                    mẫu
+                    điện
+                    thoại phổ thông đến những dòng smartphone cao cấp, chúng tôi cam kết mang đến cho bạn những lựa chọn
+                    tốt nhất phù hợp với nhu cầu và ngân sách của bạn. <br><br>
+
+                    Tại sao nên chọn Smartphone?<br><br>
+
+                    Sản phẩm chính hãng: Mọi sản phẩm tại cửa hàng đều là hàng chính hãng, được nhập khẩu trực tiếp từ
+                    các nhà sản xuất uy tín, đảm bảo chất lượng và nguồn gốc rõ ràng.
+                    Giá cả cạnh tranh: Chúng tôi luôn cung cấp mức giá hợp lý, kèm theo các chương trình khuyến mãi, trả
+                    góp linh hoạt và nhiều ưu đãi hấp dẫn khác để bạn có thể sở hữu chiếc điện thoại mong muốn mà không
+                    lo về giá. <br><br>
+                    Dịch vụ sau bán hàng: Chúng tôi tự hào với dịch vụ chăm sóc khách hàng chuyên nghiệp, bảo hành dài
+                    hạn và hỗ trợ kỹ thuật tận tâm, đảm bảo sự hài lòng tuyệt đối cho bạn.
+                    Giao hàng nhanh chóng: Dù bạn ở bất cứ đâu, chúng tôi cũng sẽ giao hàng tận nơi, nhanh chóng và an
+                    toàn, để bạn có thể trải nghiệm sản phẩm ngay trong thời gian ngắn nhất.
+                    Hãy đến với Smartphone để khám phá thế giới công nghệ đỉnh cao và chọn cho mình chiếc điện thoại
+                    hoàn hảo nhất!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
